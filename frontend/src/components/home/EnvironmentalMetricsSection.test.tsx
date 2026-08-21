@@ -10,7 +10,7 @@ const translations: Record<string, string> = {
   "environmental.airTemperatureC": "Air temperature",
   "environmental.windSpeed10mMs": "Wind speed",
   "environmental.relativeHumidityPct": "Relative humidity",
-  "environmental.meanRadiantTemperatureC": "Mean radiant temperature",
+  "environmental.tr": "Mean radiant temperature",
   "environmental.directNormalIrradianceWm2": "Direct normal irradiance",
   "environmental.units.celsius": "°C",
   "environmental.units.percent": "%",
@@ -20,7 +20,7 @@ const translations: Record<string, string> = {
 
 const sampleInputs: EnvironmentalInputs = {
   airTemperatureC: 16,
-  meanRadiantTemperatureC: 16,
+  tr: 16,
   relativeHumidityPct: 50,
   windSpeed10mMs: 3,
   directNormalIrradianceWm2: 10,
@@ -73,7 +73,7 @@ describe("EnvironmentalMetricsSection", () => {
     const markup = renderSection({
       ...sampleInputs,
       airTemperatureC: 31.2,
-      meanRadiantTemperatureC: 37.4,
+      tr: 37.4,
       relativeHumidityPct: 62,
     });
 

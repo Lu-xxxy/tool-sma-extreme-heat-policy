@@ -38,7 +38,7 @@ export function toEnvironmentalInputs(
 ): EnvironmentalInputs {
   return {
     airTemperatureC: api.air_temperature_c,
-    meanRadiantTemperatureC: api.mean_radiant_temperature_c,
+    tr: api.tr,
     relativeHumidityPct: api.relative_humidity_pct,
     windSpeed10mMs: api.wind_speed_10m_ms,
     directNormalIrradianceWm2: api.direct_normal_irradiance_wm2,

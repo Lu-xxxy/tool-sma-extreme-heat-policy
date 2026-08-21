@@ -328,7 +328,7 @@
     "airTemperatureC": "Air temperature",
     "windSpeed10mMs": "Wind speed",
     "relativeHumidityPct": "Relative humidity",
-    "meanRadiantTemperatureC": "Mean radiant temperature",
+    "tr": "Mean radiant temperature",
     "directNormalIrradianceWm2": "Direct normal irradiance",
     "units": {
       "celsius": "°C",

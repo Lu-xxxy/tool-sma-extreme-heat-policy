@@ -7,7 +7,7 @@ describe("ENVIRONMENTAL_METRICS", () => {
       "airTemperatureC",
       "relativeHumidityPct",
       "windSpeed10mMs",
-      "meanRadiantTemperatureC",
+      "tr",
       "directNormalIrradianceWm2",
     ]);
   });

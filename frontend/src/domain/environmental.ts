@@ -1,7 +1,7 @@
 /** Domain environmental inputs; field names mirror backend keys in camelCase. */
 export interface EnvironmentalInputs {
   airTemperatureC: number;
-  meanRadiantTemperatureC: number;
+  tr: number;
   relativeHumidityPct: number;
   windSpeed10mMs: number;
   directNormalIrradianceWm2: number;
@@ -53,9 +53,9 @@ export const ENVIRONMENTAL_METRICS: readonly EnvironmentalMetricDefinition[] = [
     decimals: 1,
   },
   {
-    field: "meanRadiantTemperatureC",
+    field: "tr",
     icon: "temperature",
-    labelKey: "environmental.meanRadiantTemperatureC",
+    labelKey: "environmental.tr",
     unitKey: "celsius",
     decimals: 1,
   },
