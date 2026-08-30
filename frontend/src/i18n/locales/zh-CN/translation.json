@@ -328,7 +328,7 @@
     "airTemperatureC": "气温",
     "windSpeed10mMs": "风速",
     "relativeHumidityPct": "相对湿度",
-    "meanRadiantTemperatureC": "平均辐射温度",
+    "tr": "平均辐射温度",
     "directNormalIrradianceWm2": "法向直接辐照度",
     "units": {
       "celsius": "°C",
