@@ -7,9 +7,9 @@ import type { EnvironmentalInputs } from "@/domain/environmental";
 
 const translations: Record<string, string> = {
   "environmental.weatherDetailsTitle": "Weather details",
-  "environmental.airTemperatureC": "Air temperature",
-  "environmental.windSpeed10mMs": "Wind speed",
-  "environmental.relativeHumidityPct": "Relative humidity",
+  "environmental.tdb": "Air temperature",
+  "environmental.v_z1": "Wind speed",
+  "environmental.rh": "Relative humidity",
   "environmental.tr": "Mean radiant temperature",
   "environmental.directNormalIrradianceWm2": "Direct normal irradiance",
   "environmental.units.celsius": "°C",
@@ -19,10 +19,10 @@ const translations: Record<string, string> = {
 };
 
 const sampleInputs: EnvironmentalInputs = {
-  airTemperatureC: 16,
+  tdb: 16,
   tr: 16,
-  relativeHumidityPct: 50,
-  windSpeed10mMs: 3,
+  rh: 50,
+  v_z1: 3,
   directNormalIrradianceWm2: 10,
 };
 
@@ -72,9 +72,9 @@ describe("EnvironmentalMetricsSection", () => {
   it("updates displayed values when inputs change", () => {
     const markup = renderSection({
       ...sampleInputs,
-      airTemperatureC: 31.2,
+      tdb: 31.2,
       tr: 37.4,
-      relativeHumidityPct: 62,
+      rh: 62,
     });
 
     expect(markup).toContain("31.2°C");

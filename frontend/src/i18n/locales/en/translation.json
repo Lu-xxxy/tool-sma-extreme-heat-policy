@@ -325,9 +325,9 @@
     "showWeatherDetails": "View weather details",
     "hideWeatherDetails": "Hide weather details",
     "weatherDetailsTitle": "Weather details",
-    "airTemperatureC": "Air temperature",
-    "windSpeed10mMs": "Wind speed",
-    "relativeHumidityPct": "Relative humidity",
+    "tdb": "Air temperature",
+    "v_z1": "Wind speed",
+    "rh": "Relative humidity",
     "tr": "Mean radiant temperature",
     "directNormalIrradianceWm2": "Direct normal irradiance",
     "units": {

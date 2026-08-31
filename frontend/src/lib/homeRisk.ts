@@ -37,10 +37,10 @@ export function toEnvironmentalInputs(
   api: ForecastInputsApiData,
 ): EnvironmentalInputs {
   return {
-    airTemperatureC: api.air_temperature_c,
+    tdb: api.tdb,
     tr: api.tr,
-    relativeHumidityPct: api.relative_humidity_pct,
-    windSpeed10mMs: api.wind_speed_10m_ms,
+    rh: api.rh,
+    v_z1: api.v_z1,
     directNormalIrradianceWm2: api.direct_normal_irradiance_wm2,
   };
 }

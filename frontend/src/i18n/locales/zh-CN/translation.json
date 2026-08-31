@@ -325,9 +325,9 @@
     "showWeatherDetails": "查看天气详情",
     "hideWeatherDetails": "隐藏天气详情",
     "weatherDetailsTitle": "天气详情",
-    "airTemperatureC": "气温",
-    "windSpeed10mMs": "风速",
-    "relativeHumidityPct": "相对湿度",
+    "tdb": "气温",
+    "v_z1": "风速",
+    "rh": "相对湿度",
     "tr": "平均辐射温度",
     "directNormalIrradianceWm2": "法向直接辐照度",
     "units": {

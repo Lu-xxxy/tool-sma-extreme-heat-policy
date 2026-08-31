@@ -1,9 +1,9 @@
-/** Domain environmental inputs; field names mirror backend keys in camelCase. */
+/** Domain environmental inputs; field names mirror the backend response keys. */
 export interface EnvironmentalInputs {
-  airTemperatureC: number;
+  tdb: number;
   tr: number;
-  relativeHumidityPct: number;
-  windSpeed10mMs: number;
+  rh: number;
+  v_z1: number;
   directNormalIrradianceWm2: number;
 }
 
@@ -32,23 +32,23 @@ export interface EnvironmentalMetricDefinition {
 /** Metric order: familiar weather trio first, then radiation inputs. */
 export const ENVIRONMENTAL_METRICS: readonly EnvironmentalMetricDefinition[] = [
   {
-    field: "airTemperatureC",
+    field: "tdb",
     icon: "temperature",
-    labelKey: "environmental.airTemperatureC",
+    labelKey: "environmental.tdb",
     unitKey: "celsius",
     decimals: 1,
   },
   {
-    field: "relativeHumidityPct",
+    field: "rh",
     icon: "droplet",
-    labelKey: "environmental.relativeHumidityPct",
+    labelKey: "environmental.rh",
     unitKey: "percent",
     decimals: 0,
   },
   {
-    field: "windSpeed10mMs",
+    field: "v_z1",
     icon: "wind",
-    labelKey: "environmental.windSpeed10mMs",
+    labelKey: "environmental.v_z1",
     unitKey: "metersPerSecond",
     decimals: 1,
   },
